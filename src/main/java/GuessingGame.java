@@ -6,8 +6,10 @@ public class GuessingGame {
 
         prompter.setItem();
         prompter.setItemCount();
+        prompter.showOptions();
+        jar.fill();
         do {
-            prompter.isCorrectGuess();
+            prompter.makeGuess();
         } while (!prompter.isCorrectGuess());
         
 
