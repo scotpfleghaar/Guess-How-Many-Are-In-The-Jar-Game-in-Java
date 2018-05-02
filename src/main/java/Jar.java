@@ -18,10 +18,8 @@ public class Jar {
         return this.item;
     }
     public void fill(){
-        itemsInJar = random.nextInt(this.maxItems);
-        if (itemsInJar == 0){
-            itemsInJar = 1;
-        }
+        itemsInJar = (random.nextInt(this.maxItems) + 1);
+        System.out.println(itemsInJar);
     }
     public int getItemCount(){
         return itemsInJar;
